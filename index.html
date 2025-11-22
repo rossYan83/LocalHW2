@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>Сховище контактів — шаблон</h1>
+        <p class="lead">Ім'я, прізвище, телефон та email.</p>
+      </div>
+      <div style="text-align:right;color:var(--muted);font-size:13px;">
+        <div>Підготовано як UI-шаблон</div>
+      </div>
+    </header>
+
+    <div class="grid">
+      <div class="card">
+        <h3 style="margin:0 0 12px 0">Додати / Редагувати контакт</h3>
+        <form id="contact-form" autocomplete="off">
+          <div class="field">
+            <label for="firstName">Ім'я</label>
+            <input id="firstName" name="firstName" type="text" placeholder="Іван" />
+          </div>
+
+          <div class="field">
+            <label for="lastName">Прізвище</label>
+            <input id="lastName" name="lastName" type="text" placeholder="Іваненко" />
+          </div>
+
+          <div class="field">
+            <label for="phone">Телефон</label>
+            <input id="phone" name="phone" type="tel" placeholder="+380 00 000 0000" />
+          </div>
+
+          <div class="field">
+            <label for="email">Електронна адреса</label>
+            <input id="email" name="email" type="email" placeholder="ivan@example.com" />
+          </div>
+
+          <div class="actions">
+            <button type="button" class="btn-primary">Зберегти контакт</button>
+            <button type="button" class="btn-ghost">Очистити</button>
+            <button type="button" class="btn-danger">Видалити</button>
+          </div>
+
+          <p style="margin-top:10px;color:var(--muted);font-size:12px;">
+            Примітка: кнопки не функціональні — щоб працювало з localStorage, необхідний JavaScript.
+          </p>
+        </form>
+      </div>
+
+    
+
+      </div>
+    </div>
+  </div>
+    <script type="module" src="./src/index.js"></script>
+</body>
+</html>
